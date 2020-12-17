@@ -35,8 +35,10 @@ namespace Daily_Diary
             this.UserNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.userNameLabel = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +46,8 @@ namespace Daily_Diary
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.guna2Button2);
             this.groupBox1.Controls.Add(this.guna2Button1);
             this.groupBox1.Controls.Add(this.guna2TextBox1);
             this.groupBox1.Controls.Add(this.UserNameTextBox);
@@ -55,7 +59,6 @@ namespace Daily_Diary
             this.groupBox1.Size = new System.Drawing.Size(413, 380);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Log In";
             // 
             // guna2Button1
             // 
@@ -67,12 +70,12 @@ namespace Daily_Diary
             this.guna2Button1.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(181, 286);
+            this.guna2Button1.Location = new System.Drawing.Point(181, 240);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "Log In";
+            this.guna2Button1.Text = "Sign In";
             // 
             // guna2TextBox1
             // 
@@ -143,7 +146,16 @@ namespace Daily_Diary
             this.userNameLabel.Size = new System.Drawing.Size(96, 18);
             this.userNameLabel.TabIndex = 0;
             this.userNameLabel.Text = "User Name :";
-            //this.userNameLabel.Click += new System.EventHandler(this.userNameLabel_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(356, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(416, 33);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Welcom to Digital Writing Platform";
             // 
             // guna2PictureBox1
             // 
@@ -158,15 +170,32 @@ namespace Daily_Diary
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label1
+            // guna2Button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(356, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(416, 33);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Welcom to Digital Writing Platform";
+            this.guna2Button2.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.BorderRadius = 4;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.RosyBrown;
+            this.guna2Button2.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(181, 320);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.TabIndex = 5;
+            this.guna2Button2.Text = "Sign up";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(259, 296);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 18);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Or";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // HomePage
             // 
@@ -199,6 +228,8 @@ namespace Daily_Diary
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
 

@@ -21,5 +21,7 @@ namespace Daily_Diary
         {
             Application.Exit();
         }
+
+       
     }
 }
