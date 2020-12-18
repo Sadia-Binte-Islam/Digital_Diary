@@ -8,20 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Daily_Diary
+namespace Daily_Diary.DesignLayer
 {
-    public partial class HomePage : Form
+    public partial class DashBoard : Form
     {
-        public HomePage()
+        public DashBoard()
         {
             InitializeComponent();
         }
 
-        
-
-        private void HomePage_FormClosed(object sender, FormClosedEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
     }
 }

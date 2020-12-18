@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
@@ -52,21 +53,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Homepage.cs">
+    <Compile Include="BusinessLayer\UserService.cs" />
+    <Compile Include="DataAccessLayer\DataAccess.cs" />
+    <Compile Include="DataAccessLayer\UserAccess.cs" />
+    <Compile Include="DesignLayer\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Homepage.Designer.cs">
+    <Compile Include="DesignLayer\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignLayer\Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterUser.cs">
+    <Compile Include="DesignLayer\RegisterUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterUser.Designer.cs">
+    <Compile Include="DesignLayer\RegisterUser.Designer.cs">
       <DependentUpon>RegisterUser.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Homepage.resx">
+    <EmbeddedResource Include="DesignLayer\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignLayer\Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -79,7 +93,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RegisterUser.resx">
+    <EmbeddedResource Include="DesignLayer\RegisterUser.resx">
       <DependentUpon>RegisterUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -95,9 +109,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Photos\stock-vector-login-icon-vector-line-symbol-1666396786.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Photos\9b9c38cd-6cee-40a6-b9d0-303cf4130883.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\test-account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\user-male-circle.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\notebook 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-circle 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
