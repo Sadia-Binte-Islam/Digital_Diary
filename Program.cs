@@ -17,7 +17,7 @@ namespace Daily_Diary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateEvent());
+            Application.Run(new HomePage());
         }
     }
 }

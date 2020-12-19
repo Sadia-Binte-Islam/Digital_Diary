@@ -66,7 +66,7 @@ namespace Daily_Diary.DesignLayer
             this.DescriptionTextBox.PlaceholderText = "";
             this.DescriptionTextBox.SelectedText = "";
             this.DescriptionTextBox.ShadowDecoration.Parent = this.DescriptionTextBox;
-            this.DescriptionTextBox.Size = new System.Drawing.Size(488, 245);
+            this.DescriptionTextBox.Size = new System.Drawing.Size(488, 235);
             this.DescriptionTextBox.TabIndex = 0;
             this.DescriptionTextBox.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 

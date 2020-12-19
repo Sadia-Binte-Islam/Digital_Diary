@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Daily_Diary.BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,36 +34,36 @@ namespace Daily_Diary.DesignLayer
             label1.Text = DateTime.Now.ToString("MM/dd/yyyy");
         }
 
+        
         private void SubmitButton_Click(object sender, EventArgs e)
+
         {
             SqlConnection connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["User"].ConnectionString);
             connection.Open();
-            
-            string sql = "INSERT INTO events (EventTitle,EventDescription,EventType) VALUES('" + EventTitleTextBox.Text + "','" + DescriptionTextBox.Text + "','" + MarkAsComboBox.Text + "')";
+            string sql = "INSERT INTO events(EventTitle,EventDescription,EventType,Date) VALUES('" +EventTitleTextBox.Text + "','" + DescriptionTextBox.Text + "','" + MarkAsComboBox.Text + "',"+label1.Text+")";
             SqlCommand command = new SqlCommand(sql, connection);
 
             int result = command.ExecuteNonQuery();
             connection.Close();
             if (result > 0)
             {
-                MessageBox.Show("Event added successfully.");
+                MessageBox.Show("Event Added successfully.");
                 EventTitleTextBox.Text = DescriptionTextBox.Text = MarkAsComboBox.Text = string.Empty;
-
-                DashBoard dashBoard = new DashBoard();
-                dashBoard.Show();
-                this.Hide();
+                 
 
             }
             else
             {
 
 
-                MessageBox.Show("Error in Event Creation");
+                MessageBox.Show("Something Error!.");
 
 
 
             }
         }
     }
-    }
+}
+    
+    
 

@@ -29,6 +29,7 @@ namespace Daily_Diary
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.EmailTextBox = new System.Windows.Forms.TextBox();
@@ -49,8 +50,10 @@ namespace Daily_Diary
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CloseButton = new Guna.UI2.WinForms.Guna2Button();
             this.MinimizedBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox1
@@ -152,6 +155,7 @@ namespace Daily_Diary
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(247, 23);
             this.ConfirmPasswordTextBox.TabIndex = 15;
             this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
+            this.ConfirmPasswordTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.ConfirmPasswordTextBox_Validating);
             // 
             // PasswordTextBox
             // 
@@ -330,6 +334,10 @@ namespace Daily_Diary
             this.MinimizedBox.Size = new System.Drawing.Size(45, 29);
             this.MinimizedBox.TabIndex = 8;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // RegisterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,6 +356,7 @@ namespace Daily_Diary
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -374,5 +383,6 @@ namespace Daily_Diary
         private System.Windows.Forms.TextBox EmailTextBox;
         private Guna.UI2.WinForms.Guna2Button CloseButton;
         private Guna.UI2.WinForms.Guna2ControlBox MinimizedBox;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

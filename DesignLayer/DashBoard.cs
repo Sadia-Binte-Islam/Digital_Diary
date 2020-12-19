@@ -21,5 +21,12 @@ namespace Daily_Diary.DesignLayer
         {
             label1.Text = DateTime.Now.ToString("HH:MM tt");
         }
+
+        private void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+            CreateEvent createEvent = new CreateEvent();
+            createEvent.Show();
+            this.Hide();
+        }
     }
 }
