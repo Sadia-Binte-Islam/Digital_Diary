@@ -142,7 +142,7 @@ namespace Daily_Diary
             this.PasswordTextBox.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTextBox.HoverState.Parent = this.PasswordTextBox;
-            this.PasswordTextBox.Location = new System.Drawing.Point(181, 165);
+            this.PasswordTextBox.Location = new System.Drawing.Point(181, 157);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
@@ -210,7 +210,7 @@ namespace Daily_Diary
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Daily_Diary.Properties.Resources.user_male_circle;
-            this.pictureBox1.Location = new System.Drawing.Point(492, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(496, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

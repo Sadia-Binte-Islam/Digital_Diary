@@ -93,6 +93,16 @@ namespace Daily_Diary.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profile {
+            get {
+                object obj = ResourceManager.GetObject("profile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stock_vector_login_icon_vector_line_symbol_1666396786 {
             get {
                 object obj = ResourceManager.GetObject("stock-vector-login-icon-vector-line-symbol-1666396786", resourceCulture);
