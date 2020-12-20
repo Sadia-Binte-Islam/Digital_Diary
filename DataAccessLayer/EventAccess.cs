@@ -36,11 +36,7 @@ namespace Daily_Diary.DataAccessLayer
                 return events;
             }
 
-            public int CreateEvent(Event e)
-            {
-                string sql = "INSERT INTO events(EventTitle,EventDescription,EventType,UserId) VALUES('" + e.EventTitle + "','" + e.EventDescription + "','" +e.EventType  + "'," + e.UserId + ")";
-                return this.dataAccess.ExecuteQuery(sql);
-            }
+           
 
             public int GetUserId(string userName)
             {
@@ -49,7 +45,26 @@ namespace Daily_Diary.DataAccessLayer
                 reader.Read();
                 return (int)reader["UserId"];
             }
-            
+
+        public List<Event> GetEventsForSearch(string eventType)
+        {
+            string sql = "SELECT * FROM t_events WHERE EventType LIKE '" + eventType + "%'";
+            this.dataAccess = new DataAccess();
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            List<Event> events = new List<Event>();
+            while (reader.Read())
+            {
+                Event e = new Event();
+                e.EventTitle = reader["Event Title"].ToString();
+                e.EventDescription = reader["Event Description"].ToString();
+                e.EventType = reader["Event Type"].ToString();
+                e.EventDate = reader["Event Date"].ToString();
+                e.UserId = (int)reader["CategoryId"];
+                events.Add(e);
+            }
+            return events;
         }
+
+    }
     }
 

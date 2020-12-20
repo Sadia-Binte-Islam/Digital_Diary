@@ -10,34 +10,24 @@ namespace Daily_Diary.BusinessLayer
 {
     class EventService
     {
-        
-        
-            EventAccess  eventAccess;
+
+
+              EventAccess eventAccess;
             public EventService()
             {
             EventAccess eventAccess = new EventAccess();
             }
 
-            public List<Event> GetEventList()
+            public List<Event> GetAllEvents()
             {
                 return eventAccess.GetAllEvents();
             }
-            /*public int AddNewProduct(string eventTitle, string eventDescription, string eventType, string UserName)
-            {
-                int UserId = EventAccess.GetUserId(UserName);
-            Event e = new Event()
-            {
-                EventTitle = eventTitle,
-                EventDescription = eventDescription,
-                EventType = eventType,
-                UserId = UserId,
-
-                    
-             };
-                EventAccess eventAccess = new EventAccess();
-                return eventAccess.CreateEvent(e);
-            }*/
             
+        public List<Event> GetProductListForSearch(string eventType)
+        {
+            return this.eventAccess.GetEventsForSearch(eventType);
         }
+
+    }
     }
 

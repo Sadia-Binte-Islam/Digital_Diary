@@ -22,14 +22,26 @@ namespace Daily_Diary
 
         
 
-        private void RegisterUser_Load(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ConfirmPasswordTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.ConfirmPasswordTextBox.Text != this.PasswordTextBox.Text)
+            {
+                this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "Password and Confirm must be the same");
+                e.Cancel = true;
+                PasswordTextBox.Clear();
+                ConfirmPasswordTextBox.Clear();
+            }
+            else
+            {
+                this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "");
+            }
         }
 
         private void CreateProfileButton_Click(object sender, EventArgs e)
@@ -71,20 +83,7 @@ namespace Daily_Diary
             }
         }
 
-        private void ConfirmPasswordTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (this.ConfirmPasswordTextBox.Text != this.PasswordTextBox.Text)
-            {
-                this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "Password and Confirm must be the same");
-                e.Cancel = true;
-                PasswordTextBox.Clear();
-                ConfirmPasswordTextBox.Clear();
-            }
-            else
-            {
-                this.errorProvider1.SetError(this.ConfirmPasswordTextBox, "");
-            }
-        }
+       
     }
     }
 

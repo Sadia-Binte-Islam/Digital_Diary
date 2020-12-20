@@ -151,7 +151,6 @@ namespace Daily_Diary
             this.ConfirmPasswordTextBox.Multiline = true;
             this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
             this.ConfirmPasswordTextBox.PasswordChar = '*';
-            this.ConfirmPasswordTextBox.ReadOnly = true;
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(247, 23);
             this.ConfirmPasswordTextBox.TabIndex = 15;
             this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
@@ -160,10 +159,8 @@ namespace Daily_Diary
             // PasswordTextBox
             // 
             this.PasswordTextBox.Location = new System.Drawing.Point(211, 179);
-            this.PasswordTextBox.Multiline = true;
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
-            this.PasswordTextBox.ReadOnly = true;
             this.PasswordTextBox.Size = new System.Drawing.Size(247, 23);
             this.PasswordTextBox.TabIndex = 14;
             this.PasswordTextBox.UseSystemPasswordChar = true;
@@ -352,7 +349,6 @@ namespace Daily_Diary
             this.Name = "RegisterUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register User";
-            this.Load += new System.EventHandler(this.RegisterUser_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
