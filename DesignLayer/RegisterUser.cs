@@ -82,6 +82,18 @@ namespace Daily_Diary
             homePage.Show();
             this.Hide();
         }
+
+        private void ConfirmPasswordTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if(PasswordTextBox.Text!= ConfirmPasswordTextBox.Text)
+            {
+                MessageBox.Show("Doesn't match");
+            }
+            else
+            {
+
+            }
+        }
     }
     }
 

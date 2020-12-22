@@ -29,6 +29,7 @@ namespace Daily_Diary
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.EmailTextBox = new System.Windows.Forms.TextBox();
@@ -50,8 +51,10 @@ namespace Daily_Diary
             this.MinimizedBox = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox1
@@ -79,7 +82,7 @@ namespace Daily_Diary
             this.guna2GroupBox1.FillColor = System.Drawing.Color.LightGray;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(248, 88);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(235, 67);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
             this.guna2GroupBox1.Size = new System.Drawing.Size(507, 442);
@@ -153,6 +156,7 @@ namespace Daily_Diary
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(247, 23);
             this.ConfirmPasswordTextBox.TabIndex = 15;
             this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
+            this.ConfirmPasswordTextBox.TextChanged += new System.EventHandler(this.ConfirmPasswordTextBox_TextChanged);
             // 
             // PasswordTextBox
             // 
@@ -324,9 +328,9 @@ namespace Daily_Diary
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Daily_Diary.Properties.Resources.test_account;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 88);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 138);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 442);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -343,13 +347,18 @@ namespace Daily_Diary
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Daily_Diary.Properties.Resources.Vector3;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(73, 27);
+            this.guna2Button1.Location = new System.Drawing.Point(31, 513);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(38, 36);
+            this.guna2Button1.Size = new System.Drawing.Size(159, 36);
             this.guna2Button1.TabIndex = 21;
+            this.guna2Button1.Text = "Go to Home";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // RegisterUser
             // 
@@ -370,6 +379,7 @@ namespace Daily_Diary
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -397,5 +407,6 @@ namespace Daily_Diary
         private Guna.UI2.WinForms.Guna2Button CloseButton;
         private Guna.UI2.WinForms.Guna2ControlBox MinimizedBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -224,12 +224,12 @@ namespace Daily_Diary.DesignLayer
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Daily_Diary.Properties.Resources.Vector3;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(619, 473);
+            this.guna2Button1.Location = new System.Drawing.Point(525, 473);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(156, 36);
+            this.guna2Button1.Size = new System.Drawing.Size(250, 36);
             this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "Go to Home";
+            this.guna2Button1.Text = "Go to Previous page";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 

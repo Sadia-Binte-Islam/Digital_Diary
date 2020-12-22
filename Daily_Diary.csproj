@@ -187,5 +187,8 @@
   <ItemGroup>
     <None Include="Resources\Vector3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disegno-di-bambino-scrivere-quaderno-colorato-660x847.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
