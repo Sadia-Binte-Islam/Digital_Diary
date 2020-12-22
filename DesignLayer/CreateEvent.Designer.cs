@@ -29,7 +29,6 @@ namespace Daily_Diary.DesignLayer
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.DescriptionTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EventTitle = new System.Windows.Forms.Label();
             this.EventTitleTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,9 +39,9 @@ namespace Daily_Diary.DesignLayer
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,17 +55,19 @@ namespace Daily_Diary.DesignLayer
             this.DescriptionTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DescriptionTextBox.DisabledState.Parent = this.DescriptionTextBox;
             this.DescriptionTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DescriptionTextBox.FillColor = System.Drawing.Color.WhiteSmoke;
             this.DescriptionTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DescriptionTextBox.FocusedState.Parent = this.DescriptionTextBox;
+            this.DescriptionTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DescriptionTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DescriptionTextBox.HoverState.Parent = this.DescriptionTextBox;
-            this.DescriptionTextBox.Location = new System.Drawing.Point(236, 93);
+            this.DescriptionTextBox.Location = new System.Drawing.Point(259, 102);
             this.DescriptionTextBox.Name = "DescriptionTextBox";
             this.DescriptionTextBox.PasswordChar = '\0';
             this.DescriptionTextBox.PlaceholderText = "";
             this.DescriptionTextBox.SelectedText = "";
             this.DescriptionTextBox.ShadowDecoration.Parent = this.DescriptionTextBox;
-            this.DescriptionTextBox.Size = new System.Drawing.Size(488, 245);
+            this.DescriptionTextBox.Size = new System.Drawing.Size(488, 167);
             this.DescriptionTextBox.TabIndex = 0;
             this.DescriptionTextBox.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -74,7 +75,7 @@ namespace Daily_Diary.DesignLayer
             // 
             this.EventTitle.AutoSize = true;
             this.EventTitle.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EventTitle.Location = new System.Drawing.Point(89, 38);
+            this.EventTitle.Location = new System.Drawing.Point(105, 42);
             this.EventTitle.Name = "EventTitle";
             this.EventTitle.Size = new System.Drawing.Size(112, 18);
             this.EventTitle.TabIndex = 1;
@@ -90,11 +91,13 @@ namespace Daily_Diary.DesignLayer
             this.EventTitleTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.EventTitleTextBox.DisabledState.Parent = this.EventTitleTextBox;
             this.EventTitleTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EventTitleTextBox.FillColor = System.Drawing.Color.WhiteSmoke;
             this.EventTitleTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EventTitleTextBox.FocusedState.Parent = this.EventTitleTextBox;
+            this.EventTitleTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.EventTitleTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EventTitleTextBox.HoverState.Parent = this.EventTitleTextBox;
-            this.EventTitleTextBox.Location = new System.Drawing.Point(236, 31);
+            this.EventTitleTextBox.Location = new System.Drawing.Point(259, 42);
             this.EventTitleTextBox.Name = "EventTitleTextBox";
             this.EventTitleTextBox.PasswordChar = '\0';
             this.EventTitleTextBox.PlaceholderText = "";
@@ -107,7 +110,7 @@ namespace Daily_Diary.DesignLayer
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 102);
+            this.label2.Location = new System.Drawing.Point(65, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 18);
             this.label2.TabIndex = 3;
@@ -119,6 +122,7 @@ namespace Daily_Diary.DesignLayer
             this.MarkAsComboBox.BorderRadius = 4;
             this.MarkAsComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.MarkAsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MarkAsComboBox.FillColor = System.Drawing.Color.WhiteSmoke;
             this.MarkAsComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MarkAsComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MarkAsComboBox.FocusedState.Parent = this.MarkAsComboBox;
@@ -131,7 +135,7 @@ namespace Daily_Diary.DesignLayer
             "Moderate",
             "Low"});
             this.MarkAsComboBox.ItemsAppearance.Parent = this.MarkAsComboBox;
-            this.MarkAsComboBox.Location = new System.Drawing.Point(236, 363);
+            this.MarkAsComboBox.Location = new System.Drawing.Point(259, 296);
             this.MarkAsComboBox.Name = "MarkAsComboBox";
             this.MarkAsComboBox.ShadowDecoration.Parent = this.MarkAsComboBox;
             this.MarkAsComboBox.Size = new System.Drawing.Size(164, 36);
@@ -142,7 +146,7 @@ namespace Daily_Diary.DesignLayer
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(108, 373);
+            this.label3.Location = new System.Drawing.Point(137, 314);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 18);
             this.label3.TabIndex = 5;
@@ -154,13 +158,13 @@ namespace Daily_Diary.DesignLayer
             this.SubmitButton.CheckedState.Parent = this.SubmitButton;
             this.SubmitButton.CustomImages.Parent = this.SubmitButton;
             this.SubmitButton.FillColor = System.Drawing.Color.LightSteelBlue;
-            this.SubmitButton.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitButton.Font = new System.Drawing.Font("JetBrains Mono", 12F);
             this.SubmitButton.ForeColor = System.Drawing.Color.Black;
             this.SubmitButton.HoverState.Parent = this.SubmitButton;
-            this.SubmitButton.Location = new System.Drawing.Point(561, 439);
+            this.SubmitButton.Location = new System.Drawing.Point(627, 460);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.ShadowDecoration.Parent = this.SubmitButton;
-            this.SubmitButton.Size = new System.Drawing.Size(117, 37);
+            this.SubmitButton.Size = new System.Drawing.Size(172, 37);
             this.SubmitButton.TabIndex = 6;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
@@ -170,11 +174,11 @@ namespace Daily_Diary.DesignLayer
             this.guna2Button1.BorderRadius = 4;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button1.Font = new System.Drawing.Font("JetBrains Mono", 12F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(517, 363);
+            this.guna2Button1.Location = new System.Drawing.Point(604, 323);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(207, 36);
@@ -187,7 +191,7 @@ namespace Daily_Diary.DesignLayer
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(780, 2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(804, 2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(50, 24);
@@ -200,16 +204,54 @@ namespace Daily_Diary.DesignLayer
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(737, 2);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(761, 2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.Size = new System.Drawing.Size(50, 24);
             this.guna2ControlBox2.TabIndex = 9;
             // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(259, 444);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(227, 36);
+            this.guna2DateTimePicker1.TabIndex = 11;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2020, 12, 23, 0, 17, 22, 393);
+            this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 4;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.LightSteelBlue;
+            this.guna2Button2.Font = new System.Drawing.Font("JetBrains Mono", 12F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::Daily_Diary.Properties.Resources.Vector2;
+            this.guna2Button2.Location = new System.Drawing.Point(12, 520);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(180, 37);
+            this.guna2Button2.TabIndex = 13;
+            this.guna2Button2.Text = "Go to Home";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::Daily_Diary.Properties.Resources.profile;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(464, 363);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(539, 331);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(47, 28);
@@ -217,27 +259,14 @@ namespace Daily_Diary.DesignLayer
             this.guna2PictureBox1.TabIndex = 10;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(415, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "label1";
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // CreateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(831, 511);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.ClientSize = new System.Drawing.Size(855, 569);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
@@ -273,7 +302,7 @@ namespace Daily_Diary.DesignLayer
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

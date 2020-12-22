@@ -64,6 +64,11 @@ namespace Daily_Diary
         {
 
         }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

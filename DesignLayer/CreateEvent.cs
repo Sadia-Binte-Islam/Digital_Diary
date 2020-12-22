@@ -30,7 +30,7 @@ namespace Daily_Diary.DesignLayer
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = DateTime.Now.ToString("MM/dd/yyyy");
+            
         }
 
         private void SubmitButton_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace Daily_Diary.DesignLayer
             SqlConnection connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["User"].ConnectionString);
             connection.Open();
             
-            string sql = "INSERT INTO events (EventTitle,EventDescription,EventType) VALUES('" + EventTitleTextBox.Text + "','" + DescriptionTextBox.Text + "','" + MarkAsComboBox.Text + "')";
+            string sql = "INSERT INTO t_events (EventTitle,EventDescription,EventType,EventDate) VALUES('" + EventTitleTextBox.Text + "','" + DescriptionTextBox.Text + "','" + MarkAsComboBox.Text + "','"+guna2DateTimePicker1.Text+"')";
             SqlCommand command = new SqlCommand(sql, connection);
 
             int result = command.ExecuteNonQuery();
@@ -46,7 +46,7 @@ namespace Daily_Diary.DesignLayer
             if (result > 0)
             {
                 MessageBox.Show("Event added successfully.");
-                EventTitleTextBox.Text = DescriptionTextBox.Text = MarkAsComboBox.Text = string.Empty;
+                EventTitleTextBox.Text = DescriptionTextBox.Text = MarkAsComboBox.Text =guna2DateTimePicker1.Text= string.Empty;
 
                 DashBoard dashBoard = new DashBoard();
                 dashBoard.Show();
@@ -62,6 +62,18 @@ namespace Daily_Diary.DesignLayer
 
 
             }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            DashBoard dashBoard = new DashBoard();
+            dashBoard.Show();
+            this.Hide();
+        }
+
+        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

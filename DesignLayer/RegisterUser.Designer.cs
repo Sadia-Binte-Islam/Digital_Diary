@@ -46,18 +46,19 @@ namespace Daily_Diary
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.FullNameLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CloseButton = new Guna.UI2.WinForms.Guna2Button();
             this.MinimizedBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox1
             // 
-            this.guna2GroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2GroupBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.BorderRadius = 20;
+            this.guna2GroupBox1.BackColor = System.Drawing.Color.LightGray;
+            this.guna2GroupBox1.BorderColor = System.Drawing.Color.LightGray;
+            this.guna2GroupBox1.BorderRadius = 25;
             this.guna2GroupBox1.Controls.Add(this.label6);
             this.guna2GroupBox1.Controls.Add(this.EmailTextBox);
             this.guna2GroupBox1.Controls.Add(this.label5);
@@ -75,14 +76,15 @@ namespace Daily_Diary
             this.guna2GroupBox1.Controls.Add(this.label2);
             this.guna2GroupBox1.Controls.Add(this.FullNameLabel);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.LightGray;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(218, 57);
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(248, 88);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(554, 473);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(507, 442);
             this.guna2GroupBox1.TabIndex = 0;
+            this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // label6
             // 
@@ -148,7 +150,6 @@ namespace Daily_Diary
             this.ConfirmPasswordTextBox.Multiline = true;
             this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
             this.ConfirmPasswordTextBox.PasswordChar = '*';
-            this.ConfirmPasswordTextBox.ReadOnly = true;
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(247, 23);
             this.ConfirmPasswordTextBox.TabIndex = 15;
             this.ConfirmPasswordTextBox.UseSystemPasswordChar = true;
@@ -159,7 +160,6 @@ namespace Daily_Diary
             this.PasswordTextBox.Multiline = true;
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
-            this.PasswordTextBox.ReadOnly = true;
             this.PasswordTextBox.Size = new System.Drawing.Size(247, 23);
             this.PasswordTextBox.TabIndex = 14;
             this.PasswordTextBox.UseSystemPasswordChar = true;
@@ -182,14 +182,15 @@ namespace Daily_Diary
             // 
             // CreateProfileButton
             // 
+            this.CreateProfileButton.BorderColor = System.Drawing.Color.Transparent;
             this.CreateProfileButton.BorderRadius = 10;
             this.CreateProfileButton.CheckedState.Parent = this.CreateProfileButton;
             this.CreateProfileButton.CustomImages.Parent = this.CreateProfileButton;
             this.CreateProfileButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CreateProfileButton.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateProfileButton.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
             this.CreateProfileButton.ForeColor = System.Drawing.Color.White;
             this.CreateProfileButton.HoverState.Parent = this.CreateProfileButton;
-            this.CreateProfileButton.Location = new System.Drawing.Point(236, 398);
+            this.CreateProfileButton.Location = new System.Drawing.Point(211, 363);
             this.CreateProfileButton.Name = "CreateProfileButton";
             this.CreateProfileButton.ShadowDecoration.Parent = this.CreateProfileButton;
             this.CreateProfileButton.Size = new System.Drawing.Size(180, 45);
@@ -286,17 +287,6 @@ namespace Daily_Diary
             this.FullNameLabel.TabIndex = 0;
             this.FullNameLabel.Text = "Full Name :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Daily_Diary.Properties.Resources.test_account;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 88);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 442);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // CloseButton
             // 
             this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -330,12 +320,44 @@ namespace Daily_Diary
             this.MinimizedBox.Size = new System.Drawing.Size(45, 29);
             this.MinimizedBox.TabIndex = 8;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Daily_Diary.Properties.Resources.test_account;
+            this.pictureBox1.Location = new System.Drawing.Point(31, 88);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 442);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 4;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Wheat;
+            this.guna2Button1.Font = new System.Drawing.Font("JetBrains Mono", 12F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Daily_Diary.Properties.Resources.Vector3;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.Location = new System.Drawing.Point(73, 27);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(38, 36);
+            this.guna2Button1.TabIndex = 21;
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // RegisterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LemonChiffon;
+            this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.MinimizedBox);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.pictureBox1);
@@ -374,5 +396,6 @@ namespace Daily_Diary
         private System.Windows.Forms.TextBox EmailTextBox;
         private Guna.UI2.WinForms.Guna2Button CloseButton;
         private Guna.UI2.WinForms.Guna2ControlBox MinimizedBox;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

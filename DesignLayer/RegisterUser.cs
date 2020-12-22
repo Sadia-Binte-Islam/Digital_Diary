@@ -71,8 +71,17 @@ namespace Daily_Diary
             }
         }
 
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
 
-       
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
+        }
     }
     }
 
