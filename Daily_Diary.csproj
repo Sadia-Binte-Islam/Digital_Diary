@@ -41,7 +41,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
-    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,16 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLayer\EventService.cs" />
     <Compile Include="BusinessLayer\UserService.cs" />
     <Compile Include="DataAccessLayer\DataAccess.cs" />
-    <Compile Include="DataAccessLayer\EventAccess.cs" />
     <Compile Include="DataAccessLayer\UserAccess.cs" />
-    <Compile Include="DesignLayer\CreateEvents.cs">
+    <Compile Include="DesignLayer\CreateEvent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DesignLayer\CreateEvents.Designer.cs">
-      <DependentUpon>CreateEvents.cs</DependentUpon>
+    <Compile Include="DesignLayer\CreateEvent.Designer.cs">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
     </Compile>
     <Compile Include="DesignLayer\DashBoard.cs">
       <SubType>Form</SubType>
@@ -77,7 +74,6 @@
     <Compile Include="DesignLayer\Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,8 +83,8 @@
     <Compile Include="DesignLayer\RegisterUser.Designer.cs">
       <DependentUpon>RegisterUser.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DesignLayer\CreateEvents.resx">
-      <DependentUpon>CreateEvents.cs</DependentUpon>
+    <EmbeddedResource Include="DesignLayer\CreateEvent.resx">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
@@ -142,12 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus-circle 1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Vector %2810%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Vector %2811%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

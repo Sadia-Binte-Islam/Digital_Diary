@@ -30,6 +30,7 @@ namespace Daily_Diary
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.signUpButton = new Guna.UI2.WinForms.Guna2Button();
             this.signInButton = new Guna.UI2.WinForms.Guna2Button();
@@ -50,6 +51,7 @@ namespace Daily_Diary
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.signUpButton);
             this.groupBox1.Controls.Add(this.signInButton);
@@ -64,10 +66,22 @@ namespace Daily_Diary
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(161, 215);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(128, 18);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Forget Password";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(205, 289);
+            this.label2.Location = new System.Drawing.Point(205, 293);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(24, 18);
             this.label2.TabIndex = 6;
@@ -104,7 +118,7 @@ namespace Daily_Diary
             this.signInButton.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInButton.ForeColor = System.Drawing.Color.Black;
             this.signInButton.HoverState.Parent = this.signInButton;
-            this.signInButton.Location = new System.Drawing.Point(73, 234);
+            this.signInButton.Location = new System.Drawing.Point(73, 243);
             this.signInButton.Name = "signInButton";
             this.signInButton.ShadowDecoration.Parent = this.signInButton;
             this.signInButton.Size = new System.Drawing.Size(301, 45);
@@ -286,6 +300,7 @@ namespace Daily_Diary
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button signUpButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
         private Guna.UI2.WinForms.Guna2Button CloseButton;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }

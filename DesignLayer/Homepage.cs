@@ -48,9 +48,6 @@ namespace Daily_Diary
                 else
                 {
                     MessageBox.Show("Invalid Username or password");
-                    UserNameTextBox.Clear();
-                    PasswordTextBox.Clear();
-
                 }
             }
         }
@@ -63,7 +60,10 @@ namespace Daily_Diary
 
         }
 
-       
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
 
