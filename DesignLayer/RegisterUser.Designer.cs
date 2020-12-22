@@ -79,7 +79,7 @@ namespace Daily_Diary
             this.guna2GroupBox1.Controls.Add(this.label2);
             this.guna2GroupBox1.Controls.Add(this.FullNameLabel);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.LightGray;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.LightSteelBlue;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.Location = new System.Drawing.Point(235, 67);
@@ -150,7 +150,7 @@ namespace Daily_Diary
             // ConfirmPasswordTextBox
             // 
             this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(211, 221);
-            this.ConfirmPasswordTextBox.Multiline = true;
+            this.ConfirmPasswordTextBox.MaxLength = 6;
             this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
             this.ConfirmPasswordTextBox.PasswordChar = '*';
             this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(247, 23);
@@ -161,7 +161,7 @@ namespace Daily_Diary
             // PasswordTextBox
             // 
             this.PasswordTextBox.Location = new System.Drawing.Point(211, 179);
-            this.PasswordTextBox.Multiline = true;
+            this.PasswordTextBox.MaxLength = 6;
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '*';
             this.PasswordTextBox.Size = new System.Drawing.Size(247, 23);
@@ -190,7 +190,7 @@ namespace Daily_Diary
             this.CreateProfileButton.BorderRadius = 10;
             this.CreateProfileButton.CheckedState.Parent = this.CreateProfileButton;
             this.CreateProfileButton.CustomImages.Parent = this.CreateProfileButton;
-            this.CreateProfileButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CreateProfileButton.FillColor = System.Drawing.Color.Navy;
             this.CreateProfileButton.Font = new System.Drawing.Font("JetBrains Mono", 9.749999F);
             this.CreateProfileButton.ForeColor = System.Drawing.Color.White;
             this.CreateProfileButton.HoverState.Parent = this.CreateProfileButton;
@@ -372,9 +372,9 @@ namespace Daily_Diary
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2GroupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "RegisterUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Register User";
             this.Load += new System.EventHandler(this.RegisterUser_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
