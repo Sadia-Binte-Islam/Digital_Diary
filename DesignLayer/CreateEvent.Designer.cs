@@ -29,6 +29,7 @@ namespace Daily_Diary.DesignLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateEvent));
             this.DescriptionTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EventTitle = new System.Windows.Forms.Label();
             this.EventTitleTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,9 +41,11 @@ namespace Daily_Diary.DesignLayer
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.EventPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.EventPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // DescriptionTextBox
@@ -67,7 +70,7 @@ namespace Daily_Diary.DesignLayer
             this.DescriptionTextBox.PlaceholderText = "";
             this.DescriptionTextBox.SelectedText = "";
             this.DescriptionTextBox.ShadowDecoration.Parent = this.DescriptionTextBox;
-            this.DescriptionTextBox.Size = new System.Drawing.Size(488, 167);
+            this.DescriptionTextBox.Size = new System.Drawing.Size(461, 167);
             this.DescriptionTextBox.TabIndex = 0;
             this.DescriptionTextBox.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -103,7 +106,7 @@ namespace Daily_Diary.DesignLayer
             this.EventTitleTextBox.PlaceholderText = "";
             this.EventTitleTextBox.SelectedText = "";
             this.EventTitleTextBox.ShadowDecoration.Parent = this.EventTitleTextBox;
-            this.EventTitleTextBox.Size = new System.Drawing.Size(488, 36);
+            this.EventTitleTextBox.Size = new System.Drawing.Size(461, 36);
             this.EventTitleTextBox.TabIndex = 2;
             // 
             // label2
@@ -161,10 +164,10 @@ namespace Daily_Diary.DesignLayer
             this.SubmitButton.Font = new System.Drawing.Font("JetBrains Mono", 12F);
             this.SubmitButton.ForeColor = System.Drawing.Color.Black;
             this.SubmitButton.HoverState.Parent = this.SubmitButton;
-            this.SubmitButton.Location = new System.Drawing.Point(627, 460);
+            this.SubmitButton.Location = new System.Drawing.Point(609, 504);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.ShadowDecoration.Parent = this.SubmitButton;
-            this.SubmitButton.Size = new System.Drawing.Size(172, 37);
+            this.SubmitButton.Size = new System.Drawing.Size(220, 37);
             this.SubmitButton.TabIndex = 6;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
@@ -178,12 +181,13 @@ namespace Daily_Diary.DesignLayer
             this.guna2Button1.Font = new System.Drawing.Font("JetBrains Mono", 12F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(604, 323);
+            this.guna2Button1.Location = new System.Drawing.Point(622, 383);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(207, 36);
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "Upload Event Photo";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ControlBox1
             // 
@@ -229,6 +233,53 @@ namespace Daily_Diary.DesignLayer
             this.guna2DateTimePicker1.Value = new System.DateTime(2020, 12, 23, 0, 17, 22, 393);
             this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
             // 
+            // guna2Button6
+            // 
+            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button6.BorderColor = System.Drawing.Color.Honeydew;
+            this.guna2Button6.BorderRadius = 10;
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button6.Font = new System.Drawing.Font("JetBrains Mono Medium", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
+            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button6.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2Button6.Location = new System.Drawing.Point(727, 438);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(102, 42);
+            this.guna2Button6.TabIndex = 15;
+            this.guna2Button6.Text = "Delete";
+            this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button6.UseTransparentBackground = true;
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.BorderColor = System.Drawing.Color.Honeydew;
+            this.guna2Button5.BorderRadius = 10;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.Font = new System.Drawing.Font("JetBrains Mono Medium", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
+            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2Button5.Location = new System.Drawing.Point(609, 438);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(101, 42);
+            this.guna2Button5.TabIndex = 14;
+            this.guna2Button5.Text = "Edit";
+            this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.UseTransparentBackground = true;
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            // 
             // guna2Button2
             // 
             this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
@@ -239,25 +290,25 @@ namespace Daily_Diary.DesignLayer
             this.guna2Button2.Font = new System.Drawing.Font("JetBrains Mono", 12F);
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Image = global::Daily_Diary.Properties.Resources.Vector2;
-            this.guna2Button2.Location = new System.Drawing.Point(12, 520);
+            this.guna2Button2.Image = global::Daily_Diary.Properties.Resources.template;
+            this.guna2Button2.Location = new System.Drawing.Point(37, 504);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(180, 37);
+            this.guna2Button2.Size = new System.Drawing.Size(193, 37);
             this.guna2Button2.TabIndex = 13;
-            this.guna2Button2.Text = "Go to Home";
+            this.guna2Button2.Text = "Go to Dash Board";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // guna2PictureBox1
+            // EventPictureBox
             // 
-            this.guna2PictureBox1.Image = global::Daily_Diary.Properties.Resources.profile;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(539, 331);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(47, 28);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 10;
-            this.guna2PictureBox1.TabStop = false;
+            this.EventPictureBox.FillColor = System.Drawing.Color.LightGray;
+            this.EventPictureBox.Location = new System.Drawing.Point(622, 275);
+            this.EventPictureBox.Name = "EventPictureBox";
+            this.EventPictureBox.ShadowDecoration.Parent = this.EventPictureBox;
+            this.EventPictureBox.Size = new System.Drawing.Size(207, 102);
+            this.EventPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EventPictureBox.TabIndex = 10;
+            this.EventPictureBox.TabStop = false;
             // 
             // CreateEvent
             // 
@@ -265,9 +316,11 @@ namespace Daily_Diary.DesignLayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(855, 569);
+            this.Controls.Add(this.guna2Button6);
+            this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.EventPictureBox);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2Button1);
@@ -283,7 +336,7 @@ namespace Daily_Diary.DesignLayer
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateEvent";
             this.Load += new System.EventHandler(this.CreateEvent_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EventPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,8 +354,10 @@ namespace Daily_Diary.DesignLayer
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox EventPictureBox;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
     }
 }

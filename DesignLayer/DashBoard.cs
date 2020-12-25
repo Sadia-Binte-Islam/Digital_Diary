@@ -38,6 +38,8 @@ namespace Daily_Diary.DesignLayer
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'userDataSet1.t_events' table. You can move, or remove it, as needed.
+            this.t_eventsTableAdapter1.Fill(this.userDataSet1.t_events);
             // TODO: This line of code loads data into the 'userDataSet.t_events' table. You can move, or remove it, as needed.
             this.t_eventsTableAdapter.Fill(this.userDataSet.t_events);
 

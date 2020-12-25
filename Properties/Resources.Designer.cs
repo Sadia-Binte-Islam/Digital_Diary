@@ -103,6 +103,16 @@ namespace Daily_Diary.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OIP {
+            get {
+                object obj = ResourceManager.GetObject("OIP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus_circle_1 {
             get {
                 object obj = ResourceManager.GetObject("plus-circle 1", resourceCulture);
@@ -146,6 +156,16 @@ namespace Daily_Diary.Properties {
         internal static System.Drawing.Bitmap stock_vector_login_icon_vector_line_symbol_1666396786 {
             get {
                 object obj = ResourceManager.GetObject("stock-vector-login-icon-vector-line-symbol-1666396786", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap template {
+            get {
+                object obj = ResourceManager.GetObject("template", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
