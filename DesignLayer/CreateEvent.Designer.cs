@@ -29,7 +29,7 @@ namespace Daily_Diary.DesignLayer
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateEvent));
+            this.components = new System.ComponentModel.Container();
             this.DescriptionTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EventTitle = new System.Windows.Forms.Label();
             this.EventTitleTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,10 +41,10 @@ namespace Daily_Diary.DesignLayer
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.EventPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.EventPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -233,53 +233,6 @@ namespace Daily_Diary.DesignLayer
             this.guna2DateTimePicker1.Value = new System.DateTime(2020, 12, 23, 0, 17, 22, 393);
             this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
             // 
-            // guna2Button6
-            // 
-            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.BorderColor = System.Drawing.Color.Honeydew;
-            this.guna2Button6.BorderRadius = 10;
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.Font = new System.Drawing.Font("JetBrains Mono Medium", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
-            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button6.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button6.Location = new System.Drawing.Point(727, 438);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(102, 42);
-            this.guna2Button6.TabIndex = 15;
-            this.guna2Button6.Text = "Delete";
-            this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button6.UseTransparentBackground = true;
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.BorderColor = System.Drawing.Color.Honeydew;
-            this.guna2Button5.BorderRadius = 10;
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.Font = new System.Drawing.Font("JetBrains Mono Medium", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
-            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button5.Location = new System.Drawing.Point(609, 438);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(101, 42);
-            this.guna2Button5.TabIndex = 14;
-            this.guna2Button5.Text = "Edit";
-            this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.UseTransparentBackground = true;
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
-            // 
             // guna2Button2
             // 
             this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
@@ -310,14 +263,38 @@ namespace Daily_Diary.DesignLayer
             this.EventPictureBox.TabIndex = 10;
             this.EventPictureBox.TabStop = false;
             // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(259, 392);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(2021, 3, 3, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker2.TabIndex = 16;
+            this.guna2DateTimePicker2.UseTransparentBackground = true;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2020, 12, 28, 0, 0, 0, 0);
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.TargetControl = this;
+            // 
             // CreateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(855, 569);
-            this.Controls.Add(this.guna2Button6);
-            this.Controls.Add(this.guna2Button5);
+            this.Controls.Add(this.guna2DateTimePicker2);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.EventPictureBox);
@@ -357,7 +334,7 @@ namespace Daily_Diary.DesignLayer
         private Guna.UI2.WinForms.Guna2PictureBox EventPictureBox;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

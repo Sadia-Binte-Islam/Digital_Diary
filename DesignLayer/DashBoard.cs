@@ -52,5 +52,12 @@ namespace Daily_Diary.DesignLayer
             this.Hide();
 
         }
+
+        private void ModifyButton_Click(object sender, EventArgs e)
+        {
+            ModifyEvent modifyEvent = new ModifyEvent();
+            modifyEvent.Show();
+            this.Hide();
+        }
     }
 }

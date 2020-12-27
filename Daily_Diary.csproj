@@ -80,6 +80,12 @@
     <Compile Include="DesignLayer\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
+    <Compile Include="DesignLayer\ModifyEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignLayer\ModifyEvent.Designer.cs">
+      <DependentUpon>ModifyEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Program.cs" />
@@ -100,6 +106,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UserDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UserDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DesignLayer\CreateEvent.resx">
       <DependentUpon>CreateEvent.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DesignLayer\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignLayer\ModifyEvent.resx">
+      <DependentUpon>ModifyEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,6 +180,39 @@
     </None>
     <None Include="UserDataSet1.xss">
       <DependentUpon>UserDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet2.xsc">
+      <DependentUpon>UserDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserDataSet2.xss">
+      <DependentUpon>UserDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet3.xsc">
+      <DependentUpon>UserDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserDataSet3.xss">
+      <DependentUpon>UserDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet4.xsc">
+      <DependentUpon>UserDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserDataSet4.xss">
+      <DependentUpon>UserDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

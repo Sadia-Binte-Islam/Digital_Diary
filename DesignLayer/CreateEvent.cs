@@ -39,7 +39,7 @@ namespace Daily_Diary.DesignLayer
             SqlConnection connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["User"].ConnectionString);
             connection.Open();
             
-            string sql = "INSERT INTO t_events (EventTitle,EventDescription,EventType,EventDate,EventPicture) VALUES('" + EventTitleTextBox.Text + "','" + DescriptionTextBox.Text + "','" + MarkAsComboBox.Text + "','"+guna2DateTimePicker1.Text+"','"+EventPictureBox.Image+"')";
+            string sql = "INSERT INTO t_events (EventTitle,EventDescription,EventType,EventDate,EventPicture) VALUES('" + EventTitleTextBox.Text + "','" + DescriptionTextBox.Text + "','" + MarkAsComboBox.Text + "','"+guna2DateTimePicker2.Text+"','"+EventPictureBox.Image+"')";
             SqlCommand command = new SqlCommand(sql, connection);
 
             int result = command.ExecuteNonQuery();
@@ -47,7 +47,7 @@ namespace Daily_Diary.DesignLayer
             if (result > 0)
             {
                 MessageBox.Show("Event added successfully.");
-                EventTitleTextBox.Text = DescriptionTextBox.Text = MarkAsComboBox.Text =guna2DateTimePicker1.Text= string.Empty;
+                EventTitleTextBox.Text = DescriptionTextBox.Text = MarkAsComboBox.Text =guna2DateTimePicker2.Text= string.Empty;
 
                 DashBoard dashBoard = new DashBoard();
                 dashBoard.Show();
